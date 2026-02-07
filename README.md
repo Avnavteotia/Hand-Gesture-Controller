@@ -1,4 +1,4 @@
-# Hand Gesture Game
+# Hand Gesture Controller
 
 Control games using hand gestures detected through your webcam. Built with MediaPipe, OpenCV, and PyAutoGUI.
 
