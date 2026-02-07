@@ -1,27 +1,19 @@
-venv/
+# Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
+*.so
 .Python
+venv/
 env/
 ENV/
-.idea/
+
+# IDE
 .vscode/
-.DS_Store
-pip-log.txt
-
-# VS Code
-.vscode/
-
-# PyCharm
 .idea/
+*.swp
+*.swo
 
-# macOS
+# OS
 .DS_Store
-
-# virtualenv
-venv/
-
-# logs
-*.log
+Thumbs.db
