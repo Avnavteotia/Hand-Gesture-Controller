@@ -1,28 +1,65 @@
 # Hand Gesture Game
 
-This small project uses MediaPipe and OpenCV to detect hand gestures from your webcam and simulate keyboard events (via PyAutoGUI) for simple game controls.
+Control games using hand gestures detected through your webcam. Built with MediaPipe, OpenCV, and PyAutoGUI.
 
-Requirements
-- Python 3.11 recommended
+## Features
+
+- Real-time hand tracking via webcam
+- Gesture-based keyboard controls:
+  - **Jump**: Raise hand to upper third of screen (↑)
+  - **Roll/Duck**: Lower hand to bottom third of screen (↓)
+  - **Move Left**: Shift hand left (←)
+  - **Move Right**: Shift hand right (→)
+
+## Requirements
+
+- Python 3.11 (recommended)
 - Windows
+- Webcam
 
-Quick start
+## Installation
 
-PowerShell:
+1. Clone the repository:
+```powershell
+git clone <repository-url>
+cd Hand_gesture_game
+```
 
+2. Create virtual environment:
+```powershell
+python -m venv venv
+```
+
+3. Activate virtual environment:
 ```powershell
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\venv\Scripts\Activate.ps1
-python gesture_hand.py
 ```
 
-To create the virtual environment and install dependencies:
-
+4. Install dependencies:
 ```powershell
-python -m venv venv
-.\venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
 ```
 
-Notes
-- If `mediapipe` fails to install on your Python version, install Python 3.11 and recreate the venv.
+## Usage
+
+Run the gesture detection:
+```powershell
+python gesture_hand.py
+```
+
+Press `q` to quit.
+
+## Notes
+
+- If MediaPipe fails to install, use Python 3.11 and recreate the virtual environment
+- Ensure proper lighting for better hand detection
+- Adjust `min_detection_confidence` in code if needed
+
+## Author
+
+Avnav Teotia
+
+## License
+
+MIT
